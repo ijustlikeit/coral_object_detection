@@ -272,16 +272,16 @@ def main():
         save_file_folder = os.path.join(save_file_folder, "")  # If no trailing / add it
     save_timestamped_file = args.timestamp
     list_of_images = os.listdir(process_folder)
-    
+    print(save_file_folder)
     for i, ind in enumerate(list_of_images):
         list_of_images[i] = str(process_folder + '/' + ind)
 
     print('Processing ', len(list_of_images), ' files ', list_of_images)
     target = list(target.split(","))
     for obj in target:
-        if not os.path.exists(save_file_folder + '/' + obj):
-           os.mkdir(save_file_folder + '/' + obj)
-    
+        if not os.path.exists(save_file_folder +  obj):
+           os.mkdir(save_file_folder + obj)
+           print('Folder created: ', save_file_folder + obj)
 #    sys.exit()
     for ind_file_image in list_of_images:
         print('Processing image: ', ind_file_image)
