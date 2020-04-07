@@ -14,7 +14,7 @@ The arguments for this script are:<br>
 --save_folder    :Folder where detected objects are to be placed<br>
 --timestamp      :Files to be timestamped T or F<br>
 
-The Coral AI server is setup on HOST and port using https://github.com/robmarkcole/coral-pi-rest-server . <br>
+Pre-requisite: The Coral AI server must be setup on HOST and port using <br>https://github.com/robmarkcole/coral-pi-rest-server <br>
 This exposes Tensorflow-lite models on a Coral usb accelerator via a Flask app.
 
 
