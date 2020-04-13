@@ -210,13 +210,13 @@ class ObjectClassifyEntity:
         except:
             print('Post error to call')
 
-        print('json', response.json()["predictions"]) 
+
         if response.status_code == HTTP_OK:
             if response.json()["success"]:
                 self._predictions = response.json()["predictions"]
             else:
-                error = response.json()["error"]
-                print("http error ",error)
+                print('Engine pooped out..no predictions made')
+                self._predictions = ''
 
     def draw_box(self, draw, box, img_width, img_height, text, color): 
         """
