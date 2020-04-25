@@ -2,7 +2,7 @@
 Component that will perform object detection and identification via coral AI. Places green boxes around objects
 that are within the selected confidence % and slots them into the "object" sub-directory. Will delete source images after completion.
 Uses flask based coral ai service to provide predications. See https://github.com/robmarkcole/coral-pi-rest-server
-version 1.1 April 13,2020
+version 1.2 April 25,2020
 
 """
 import base64
